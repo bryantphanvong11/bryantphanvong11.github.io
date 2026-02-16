@@ -270,6 +270,11 @@
     <div class="contact-wrapper">
         <h2>Contact Me</h2>
 
+        <!-- Map Container -->
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+
         <form id="contactForm" class="contact-form">
             <div class="input-group">
                 <input type="text" name="name" id="name" required>
@@ -290,6 +295,76 @@
         </form>
     </div>
 </section>
+
+<!-- Apple MapKit JS -->
+<script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.core.js"
+        crossorigin async
+        data-callback="initMapKit"
+        data-libraries="map"
+        data-token="YOUR_TOKEN_HERE">
+</script>
+
+<script type="module">
+const setupMapKitJs = async() => {
+    if (!window.mapkit || window.mapkit.loadedLibraries.length === 0) {
+        await new Promise(resolve => { window.initMapKit = resolve });
+        delete window.initMapKit;
+    }
+};
+
+const main = async() => {
+    await setupMapKitJs();
+
+    // Renton, WA coordinates
+    const rentonRegion = new mapkit.CoordinateRegion(
+        new mapkit.Coordinate(47.4829, -122.2171),
+        new mapkit.CoordinateSpan(0.05, 0.05)
+    );
+
+    // Create MapKit map in the "map" div
+    const map = new mapkit.Map("map");
+    map.region = rentonRegion;
+
+    // Add a marker/pin for Renton
+    const annotation = new mapkit.MarkerAnnotation(
+        new mapkit.Coordinate(47.4829, -122.2171),
+        { title: "Renton, WA" }
+    );
+    map.addAnnotation(annotation);
+};
+
+main();
+</script>
+
+
+<!-- Google Maps Script 
+<script>
+  function initMap() {
+    const location = { lat: 47.4829, lng: -122.2171 }; // Renton, WA
+
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 12,
+      center: location,
+      styles: [
+        { elementType: "geometry", stylers: [{ color: "#0f0f0f" }] },
+        { elementType: "labels.text.stroke", stylers: [{ color: "#000000" }] },
+        { elementType: "labels.text.fill", stylers: [{ color: "#ff8800" }] },
+        { featureType: "road", elementType: "geometry", stylers: [{ color: "#1a1a1a" }] },
+        { featureType: "water", elementType: "geometry", stylers: [{ color: "#111111" }] }
+      ]
+    });
+
+    new google.maps.Marker({
+      position: location,
+      map: map
+    });
+  }
+</script>
+
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+-->
 
 <footer>
     © 2026 Bryant Phanvong. All Rights Reserved.
