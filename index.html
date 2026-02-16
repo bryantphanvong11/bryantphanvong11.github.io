@@ -127,12 +127,15 @@
 
         <!-- PROJECT CARD -->
         <div class="project-card" data-category="web">
-            <img src="images/IMG_4091.jpg" alt="Project 1">
-            <div class="project-info">
-                <h3>Finance Dashboard</h3>
-                <p>Web Design</p>
-            </div>
+            <a href="projects/calculator/index.html" target="_blank">
+                <img src="images/IMG_4091.jpg" alt="Calculator">
+                <div class="project-info">
+                    <h3>Calculator</h3>
+                    <p>Web Design</p>
+                </div>
+            </a>
         </div>
+
 
         <div class="project-card" data-category="dev">
             <img src="images/IMG_4246.jpg" alt="Project 2">
@@ -335,36 +338,6 @@ const main = async() => {
 
 main();
 </script>
-
-
-<!-- Google Maps Script 
-<script>
-  function initMap() {
-    const location = { lat: 47.4829, lng: -122.2171 }; // Renton, WA
-
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 12,
-      center: location,
-      styles: [
-        { elementType: "geometry", stylers: [{ color: "#0f0f0f" }] },
-        { elementType: "labels.text.stroke", stylers: [{ color: "#000000" }] },
-        { elementType: "labels.text.fill", stylers: [{ color: "#ff8800" }] },
-        { featureType: "road", elementType: "geometry", stylers: [{ color: "#1a1a1a" }] },
-        { featureType: "water", elementType: "geometry", stylers: [{ color: "#111111" }] }
-      ]
-    });
-
-    new google.maps.Marker({
-      position: location,
-      map: map
-    });
-  }
-</script>
-
-<script async
-  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-</script>
--->
 
 <footer>
     © 2026 Bryant Phanvong. All Rights Reserved.
