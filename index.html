@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!--link instagram and linked in icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/cocosign.png" alt="Top Logo" class="logo-img">
+    </div>
+    <nav>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+
+        <img src="images/_DSC0352.jpg" alt="Bryant Profile Picture" class="hero-img">
+
+        <div class="hero-text">
+            <h1>Bryant Phanvong</h1>
+
+            <h3 class="hero-subtitle">
+                Bellevue College | Future Computer Science Major
+            </h3>
+
+            <p class="hero-description">
+                Motivated aspiring software engineer focused on building real-world
+                applications and AI-driven solutions.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">My Projects</a>
+
+                <a href="https://www.instagram.com/nvm.bryant/"
+                target="_blank"
+                class="btn instagram-btn">
+                <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+
+                <a href="https://www.linkedin.com/in/bryant-phanvong-54662335a/"
+                target="_blank"
+                class="btn linkedin-btn">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <div class="about-container">
+
+        <!-- LEFT SIDE (TEXT) -->
+        <div class="about-text">
+            <h2>About Me</h2>
+
+                <p class="about-intro">
+                    Highly motivated and determined to succeed as a future software and website engineer with a consistent work ethic and drive for excellence.
+                </p>
+
+            <ul class="about-list">
+                <li>Strong organizational and multitasking skills</li>
+                <li>Thrives under pressure through communication and leadership</li>
+                <li>Team-oriented with a growth mindset</li>
+                <li>Committed to exceeding expectations and achieving milestones</li>
+            </ul>
+
+        <p class="about-interests">
+            <strong>Interests:</strong> Cars, AI development, Home Projects, and AI applications solving real-world problems. 
+            Strive to obtain 1 million in investments by 25 years old. 
+        </p>
+            <ul class="about-list">
+                <li>Secretary for CSU (Chinese Student Union)</li>
+                <li>Freelance Photographer $1000 in sales from 5 months</li>
+                <li>80+ volunteer hours of AI development for Non-profit</li>
+                <li>Independent research on AI automation and web development</li>
+            </ul>
+
+
+        </div>
+
+        <!-- RIGHT SIDE (IMAGES) -->
+        <div class="about-images">
+            <img src="images/IMG_4091.jpg" alt="About image 1" class="about-img">
+            <img src="images/IMG_4246.jpg" alt="About image 2" class="about-img">
+        </div>
+
+
+    </div>
+</section>
+
+<!--PROJECTS SECTION-->
+
+<section id="projects">
+
+    <h2 class="section-title">My Projects</h2>
+
+    <!-- FILTER BUTTONS -->
+    <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Design</button>
+        <button class="filter-btn" data-filter="app">Applications</button>
+        <button class="filter-btn" data-filter="dev">Web Development</button>
+    </div>
+
+    <!-- PROJECT GRID -->
+    <div class="projects-grid">
+
+        <!-- PROJECT CARD -->
+        <div class="project-card" data-category="web">
+            <img src="images/IMG_4091.jpg" alt="Project 1">
+            <div class="project-info">
+                <h3>Finance Dashboard</h3>
+                <p>Web Design</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="dev">
+            <img src="images/IMG_4246.jpg" alt="Project 2">
+            <div class="project-info">
+                <h3>AI Portfolio App</h3>
+                <p>Web Development</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="app">
+            <img src="project3.jpg" alt="Project 3">
+            <div class="project-info">
+                <h3>Automation Tool</h3>
+                <p>Application</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="web">
+            <img src="project3.jpg" alt="Project 4">
+            <div class="project-info">
+                <h3>Automation Tool</h3>
+                <p>Application</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="dev">
+            <img src="project3.jpg" alt="Project 5">
+            <div class="project-info">
+                <h3>Automation Tool</h3>
+                <p>Application</p>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="app">
+            <img src="project3.jpg" alt="Project 6">
+            <div class="project-info">
+                <h3>Automation Tool</h3>
+                <p>Application</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--Resume Section-->
+<section id="resume">
+
+    <h2>Resume</h2>
+
+    <!-- ===== Education ===== -->
+    <h3>Education</h3>
+    <p><strong>Bellevue College</strong> — Future Computer Science Major</p>
+
+    <!-- ===== Experience ===== -->
+    <h3>Experience</h3>
+    <ul>
+        <li><strong>Secretary</strong> — Chinese Student Union (CSU)</li>
+        <li><strong>Freelance Photographer</strong> — $1000 in sales over 5 months</li>
+        <li><strong>AI Development Volunteer</strong> — 80+ hours for Non-Profit</li>
+        <li><strong>Independent Research</strong> — AI automation & web development</li>
+    </ul>
+
+    <!-- ===== Skills Section ===== -->
+    <h3>Skills</h3>
+
+    <div class="skills-container">
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <span>HTML & CSS</span>
+                <span>85%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 85%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <span>JavaScript</span>
+                <span>60%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 60%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <span>AI Automation</span>
+                <span>75%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 75%;"></div>
+            </div>
+        </div>
+
+        <div class="skill-box">
+            <div class="skill-title">
+                <span>Leadership & Communication</span>
+                <span>90%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 90%;"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ===== Download Button ===== -->
+    <a href="images/Bryant Corp Resume.pdf" target="_blank">
+        <button style="margin-top:30px;">Preview Resume</button>
+    </a>
+
+</section>
+
+<!-- ===== Skill Bar Animation Script ===== -->
+<script>
+    window.addEventListener("load", () => {
+        document.querySelectorAll(".skill-fill").forEach(bar => {
+            let width = bar.style.width;
+            bar.style.width = "0";
+            setTimeout(() => {
+                bar.style.width = width;
+            }, 200);
+        });
+    });
+</script>
+
+
+<!--Contact Page-->
+<section id="contact">
+    <div class="contact-wrapper">
+        <h2>Contact Me</h2>
+
+        <form id="contactForm" class="contact-form">
+            <div class="input-group">
+                <input type="text" name="name" id="name" required>
+                <label>Your Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" name="email" id="email" required>
+                <label>Your Email</label>
+            </div>
+
+            <div class="input-group">
+                <textarea name="message" id="message" rows="5" required></textarea>
+                <label>Your Message</label>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 Bryant Phanvong. All Rights Reserved.
+</footer>
+
+<!-- Link JavaScript -->
+<script src="script.js"></script>
+<!--Sorts projects By Category-->
+<script>  
+const buttons = document.querySelectorAll(".filter-btn");
+const cards = document.querySelectorAll(".project-card");
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+
+        document.querySelector(".filter-btn.active").classList.remove("active");
+        button.classList.add("active");
+
+        const filter = button.getAttribute("data-filter");
+
+        cards.forEach(card => {
+            if (filter === "all" || card.dataset.category === filter) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+});
+</script>
+
+</body>
+</html>
